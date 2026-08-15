@@ -1,0 +1,31 @@
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Python virtual environment
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Local benchmark data
+data/raw/
+data/processed/
+
+# Generated benchmark results
+results/*.json
+results/*.tmp
+
+# OS/editor files
+.DS_Store
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+archive/

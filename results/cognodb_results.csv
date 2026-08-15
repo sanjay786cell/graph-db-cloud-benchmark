@@ -1,0 +1,7 @@
+database,category,workload,iterations,p50_ms,p95_ms,mean_ms,min_ms,max_ms
+CognoDB,Traversal,1-hop,100,240.88,245.42,241.50,239.33,249.49
+CognoDB,Traversal,2-hop,100,241.15,247.04,242.03,239.50,256.73
+CognoDB,Traversal,3-hop,100,241.40,266.05,245.65,239.38,301.18
+CognoDB,Lookup,Point lookup,100,238.65,240.87,238.81,237.37,241.81
+CognoDB,Lookup,Filtered lookup,100,251.44,256.05,251.89,249.00,261.85
+CognoDB,Aggregation,Group-by,100,365.98,387.49,357.12,315.01,441.91
