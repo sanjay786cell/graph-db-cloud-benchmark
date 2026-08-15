@@ -34,6 +34,10 @@ Neo4j demonstrated lower observed latency and higher throughput across the teste
 
 Neo4j achieved approximately **79–82% lower observed p50 latency** across the tested workloads.
 
+### Query Latency Visualization
+
+![Query latency comparison](results/charts/query_latency_p50.png)
+
 ---
 
 ## Ingestion Performance
@@ -44,6 +48,10 @@ Neo4j achieved approximately **79–82% lower observed p50 latency** across the 
 | Relationships/sec | 842 | 7,712 | 9.16x |
 
 Relationship ingestion showed the largest observed difference, with Neo4j achieving approximately **9.16x higher throughput**.
+
+### Ingestion Throughput Visualization
+
+![Ingestion throughput comparison](results/charts/ingestion_throughput.png)
 
 ---
 
@@ -57,6 +65,10 @@ Median latency remained relatively stable across 1–3 hops, but p95 behavior wa
 | Neo4j | 59.49 ms | 182.32 ms | +206.5% |
 
 Neo4j maintained substantially lower absolute latency, but deeper traversals produced significantly higher tail-latency growth in the tested workload.
+
+### Traversal Tail Latency Visualization
+
+![Traversal p95 latency](results/charts/traversal_p95.png)
 
 ---
 
@@ -73,6 +85,10 @@ The mixed workload was executed for 30 seconds at three concurrency levels.
 Both databases completed the mixed-workload tests without errors.
 
 At 40 concurrent clients, Neo4j achieved approximately **449 QPS compared with 146 QPS for CognoDB**.
+
+### Mixed Workload Visualization
+
+![Mixed workload throughput](results/charts/mixed_workload_qps.png)
 
 ---
 
